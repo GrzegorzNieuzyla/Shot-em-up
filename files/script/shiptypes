@@ -1,0 +1,15 @@
+# name, sprite, score, hp, animation, delay, sound, drop chance,(bullet sprite, posX, posY, damage, speed,sound,degrees,animation.delay, firerate,-)*
+
+regular:files/ships/regular.png:100:100:files/animation/destruction:0.02:files/sound/explosion.wav:0.3:(files/bullets/laserred.png,0.5,0.8,15,0.8,files/sound/laserhit.wav,a,-,0,1,files/sound/laser.aiff)
+
+large:files/ships/large_ship.png:5000:2000:files/animation/destruction_big:0.02:files/sound/big_explosion.wav:0.95:(files/bullets/missile.png,0.1,0.4,50,0.4,files/sound/explosion.wav,-65,files/animation/explosion,0.02,0.8,-):(files/bullets/missile.png,0.9,0.4,50,0.4,files/sound/explosion.wav,-115,files/animation/explosion,0.02,0.8,files/sound/missile2.wav):(files/bullets/laserred.png,0.64,0.9,15,0.4,files/sound/laserhit.wav,-88,-,0,0.4,files/sound/laser.aiff):(files/bullets/laserred.png,0.45,0.9,15,0.4,files/sound/laserhit.wav,-88,-,0,0.4,-)
+
+small:files/ships/small.png:50:50:files/animation/destruction_small:0.02:files/sound/explosion.wav:0.1:(files/bullets/small.png,0.5,0.5,10,0.5,files/sound/laserhit.wav,a,-,0,0.8,files/sound/blip.wav)
+
+wide:files/ships/brown_small.png:300:200:files/animation/destruction:0.02:files/sound/explosion.wav:0.3:(files/bullets/laserred.png,0.15,0.9,15,0.8,files/sound/laserhit.wav,-70,-,0,1,files/sound/laser.aiff):(files/bullets/laserred.png,0.85,0.9,15,0.8,files/sound/laserhit.wav,-110,-,0,1,-)
+
+rocket:files/ships/blue_medium.png:1000:500:files/animation/destruction_big:0.02:files/sound/big_explosion.wav:0.3:(files/bullets/missile.png,0.25,0.9,50,0.4,files/sound/explosion.wav,-90,files/animation/explosion,0.02,1.2,files/sound/missile2.wav):(files/bullets/missile.png,0.65,0.9,50,0.4,files/sound/explosion.wav,-90,files/animation/explosion,0.02,1.2,-)
+
+destroyer:files/ships/destroyer.png:3500:1500:files/animation/destruction_big:0.02:files/sound/big_explosion.wav:0.7:(files/bullets/laserred.png,0.15,0.3,15,0.8,files/sound/laserhit.wav,a,-,0,1,files/sound/laser.aiff):(files/bullets/laserred.png,0.15,0.5,15,0.8,files/sound/laserhit.wav,a,-,0,1,-):(files/bullets/laserred.png,0.85,0.3,15,0.8,files/sound/laserhit.wav,a,-,0,1,-):(files/bullets/laserred.png,0.85,0.5,15,0.8,files/sound/laserhit.wav,a,-,0,1,-)
+
+color:files/ships/color.png:1500:800:files/animation/destruction_big:0.02:files/sound/big_explosion.wav:0.7:(files/bullets/laserred.png,0.2,0.8,15,0.8,files/sound/laserhit.wav,-88,-,0,1,-):(files/bullets/laserred.png,0.3,0.85,15,0.8,files/sound/laserhit.wav,-88,-,0,1,files/sound/laser.aiff):(files/bullets/laserred.png,0.4,0.9,15,0.8,files/sound/laserhit.wav,-88,-,0,1,-):(files/bullets/laserred.png,0.6,0.9,15,0.8,files/sound/laserhit.wav,-88,-,0,1,-):(files/bullets/laserred.png,0.7,0.85,15,0.8,files/sound/laserhit.wav,-88,-,0,1,-):(files/bullets/laserred.png,0.8,0.8,15,0.8,files/sound/laserhit.wav,-88,-,0,1,-)
