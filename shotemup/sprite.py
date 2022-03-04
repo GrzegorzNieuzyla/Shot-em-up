@@ -1,7 +1,7 @@
 import pygame
 
-from misc import getDistance
-from timer import Timer
+from .misc import getDistance
+from .timer import Timer
 
 
 class Sprite:

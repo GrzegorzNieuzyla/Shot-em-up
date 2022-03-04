@@ -2,7 +2,7 @@ from pathlib import Path
 
 import pygame
 
-from resources import Resources
+from .resources import Resources
 
 
 class Scene:
@@ -32,18 +32,16 @@ class Scene:
             Scene.options['KEY_WEAPON1_P2'] = str(pygame.K_KP1)
             Scene.options['KEY_WEAPON2_P2'] = str(pygame.K_KP2)
             Scene.options['KEY_WEAPON3_P2'] = str(pygame.K_KP3)
-            Scene.options['KEY_M_LEFT_P1'] = str(pygame.K_LEFT)
-            Scene.options['KEY_M_RIGHT_P1'] = str(pygame.K_RIGHT)
-            Scene.options['KEY_M_UP_P1'] = str(pygame.K_UP)
-            Scene.options['KEY_M_DOWN_P1'] = str(pygame.K_DOWN)
-            Scene.options['KEY_M_LEFT_P2'] = str(pygame.K_a)
-            Scene.options['KEY_M_RIGHT_P2'] = str(pygame.K_d)
-            Scene.options['KEY_M_UP_P2'] = str(pygame.K_w)
-            Scene.options['KEY_M_DOWN_P2'] = str(pygame.K_s)
-            Scene.options['KEY_M_DOWN_P2'] = str(pygame.K_s)
-            Scene.options['KEY_M_DOWN_P2'] = str(pygame.K_s)
-            Scene.options['KEY_SHOOT_P1'] = str(pygame.K_RSHIFT)
-            Scene.options['KEY_SHOOT_P2'] = str(pygame.K_LSHIFT)
+            Scene.options['KEY_M_LEFT_P1'] = str(pygame.K_a)
+            Scene.options['KEY_M_RIGHT_P1'] = str(pygame.K_d)
+            Scene.options['KEY_M_UP_P1'] = str(pygame.K_w)
+            Scene.options['KEY_M_DOWN_P1'] = str(pygame.K_s)
+            Scene.options['KEY_M_LEFT_P2'] = str(pygame.K_LEFT)
+            Scene.options['KEY_M_RIGHT_P2'] = str(pygame.K_RIGHT)
+            Scene.options['KEY_M_UP_P2'] = str(pygame.K_UP)
+            Scene.options['KEY_M_DOWN_P2'] = str(pygame.K_DOWN)
+            Scene.options['KEY_SHOOT_P1'] = str(pygame.K_SPACE)
+            Scene.options['KEY_SHOOT_P2'] = str(pygame.K_RSHIFT)
             Scene.options['FULLSCREEN'] = '1'
             Scene.saveOptions(Scene.options)
 

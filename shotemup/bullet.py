@@ -1,7 +1,5 @@
-from animation import Animation
-from misc import getDistance
-from sprite import Sprite
-from events import EventHandler
+from .misc import getDistance
+from .sprite import Sprite
 
 
 class Bullet(Sprite):

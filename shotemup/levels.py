@@ -1,19 +1,18 @@
-from gui import GuiText
-from level import Level
-from player import Player, Weapon
-from events import EventHandler
-from bullet import Bullet
+from random import random
+
 import pygame
-import math
-from random import randint, uniform, random
-from ship import Ship
-from timer import Timer
-from pickup import PickupType, Pickup
-from animation import Animation
-from misc import getAngle, getDistance
-from scene import Scene
-from ai import AI
-from sprite import Sprite
+
+from .ai import AI
+from .animation import Animation
+from .events import EventHandler
+from .gui import GuiText
+from .level import Level
+from .misc import getDistance
+from .pickup import PickupType, Pickup
+from .player import Player, Weapon
+from .scene import Scene
+from .timer import Timer
+
 
 class Level1(Level):
     def __init__(self, name, display, background):
@@ -65,9 +64,6 @@ class Level1(Level):
         self.plasmaAmmo = GuiText(20, self.display.height-75, '', fontsize=30, layer=5)
         self.hpBar = GuiText(20, self.display.height-40, '', fontsize=30, layer=5)
         self.addToDrawQueue(self.hpBar, self.plasmaAmmo,self.rocketAmmo)
-        #t = Timer(0.5, True)
-        #t.onTimeElapsed.append(lambda: self.showFPS())
-        #self.timers.add(t)
         self.setupWeapons()
         self.scoreText = GuiText(self.display.width-200, 30,'',fontsize=35,layer=5)
         self.addToDrawQueue(self.scoreText)

@@ -1,15 +1,12 @@
-import pygame
-
-from animation import Animation
-from bullet import Bullet
-from misc import getAngle, getAngleValue, getDistance, getVectorFromAngle
-from sprite import Sprite
-from timer import Timer
+from .animation import Animation
+from .bullet import Bullet
+from .misc import getAngle, getAngleValue, getVectorFromAngle
+from .sprite import Sprite
 
 
 class Barrel:
     def __init__(self, ship, posX, posY, bulletSprite, damage, speed, sound=None, direction=None, animation=None,
-     animDelay=0, firerate=0.5,shootSound=None):
+                 animDelay=0, firerate=0.5, shootSound=None):
         self.posX = posX
         self.posY = posY
         self.ship = ship

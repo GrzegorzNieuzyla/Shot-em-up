@@ -1,10 +1,9 @@
 import pygame
 
-from button import Button
-from events import EventHandler
-from resources import Resources
-from scene import Scene
-from sprite import Sprite
+from .button import Button
+from .events import EventHandler
+from .scene import Scene
+from .sprite import Sprite
 
 
 class Menu(Scene):

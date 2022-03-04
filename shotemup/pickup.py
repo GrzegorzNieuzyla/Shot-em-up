@@ -1,16 +1,16 @@
-from sprite import Sprite
 from enum import Enum
 
-from timer import Timer
+from .sprite import Sprite
+from .timer import Timer
 
 
 class PickupType(Enum):
-        Health = 0
-        Speed = 1
-        Field = 2
-        Score = 3
-        RocketAmmo = 4
-        PlasmaAmmo = 5
+    Health = 0
+    Speed = 1
+    Field = 2
+    Score = 3
+    RocketAmmo = 4
+    PlasmaAmmo = 5
 
 
 

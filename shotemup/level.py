@@ -1,9 +1,7 @@
-from resources import Resources
-from scene import Scene
-from sprite import Sprite
-from events import EventHandler
-from gui import GuiText
-import pygame
+from .events import EventHandler
+from .gui import GuiText
+from .scene import Scene
+from .sprite import Sprite
 
 
 class Level(Scene):
@@ -19,7 +17,6 @@ class Level(Scene):
         self.fps = None
         self.reset()
 
-
     def fitBackground(self):
         w = self.display.width
         ratio = w / self.background.width
@@ -29,11 +26,9 @@ class Level(Scene):
     def showFPS(self):
         self.fps.changeText(str(self.display.getFPS()).split('.')[0])
 
-
     def addToDrawQueue(self, *args):
         for obj in args:
             self.drawable.add(obj)
-
 
     def removeFromDrawQueue(self, obj) -> bool:
         if obj in self.drawable:
@@ -54,7 +49,6 @@ class Level(Scene):
         self.addToDrawQueue(self.background)
         self.loaded = False
 
-
     def moveBackground(self, distance, useComplement=True):
         self.background.y += distance
         if self.background.y > 0:
@@ -67,7 +61,6 @@ class Level(Scene):
                     self.background.y = self.display.height - self.background.height + self.backgroundComplement.y
             else:
                 self.background.y = self.display.height - self.background.height + self.background.y
-
 
     def exit(self):
         self.exiting = True

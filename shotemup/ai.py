@@ -1,10 +1,10 @@
 import math
 from random import choice, randint, uniform
 
-from animation import Animation
-from pickup import Pickup, PickupType
-from ship import Ship, Barrel
-from timer import Timer
+from .animation import Animation
+from .pickup import Pickup, PickupType
+from .ship import Ship, Barrel
+from .timer import Timer
 
 
 class WaveData:
@@ -169,7 +169,7 @@ class AI:
     def initWave(self, ships, drawable):
         self.currentWave += 1
         if self.currentWave >= len(self.waveInfo):
-            self.waveInfo = WaveData.readFile('files/script/wavedata')
+            self.waveInfo = WaveData.readFile('../files/script/wavedata')
             self.currentWave = 0
             self.mult += 0.75
         wave = self.waveInfo[self.currentWave]

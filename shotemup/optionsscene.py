@@ -1,10 +1,10 @@
 import pygame
 
-from button import Button
-from events import EventHandler
-from gui import GuiText
-from scene import Scene
-from sprite import Sprite
+from .button import Button
+from .events import EventHandler
+from .gui import GuiText
+from .scene import Scene
+from .sprite import Sprite
 
 
 class Control:

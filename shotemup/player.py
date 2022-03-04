@@ -1,15 +1,15 @@
 import pygame
 
-from animation import Animation
-from bullet import Bullet
-from misc import getDistance
-from sprite import Sprite
-from vector import Vector2d
+from .animation import Animation
+from .bullet import Bullet
+from .misc import getDistance
+from .sprite import Sprite
+from .vector import Vector2d
 
 
 class Weapon:
     def __init__(self, bulletSprite, damage, speed, firerate, radius=0,
-                 shootSfx=None, impactSfx=None,  animation=None, animDelay=0, offset_cf=1, origin=None):
+                 shootSfx=None, impactSfx=None, animation=None, animDelay=0, offset_cf=1, origin=None):
         self.bulletSprite = bulletSprite
         self.shootSfx = shootSfx
         self.impactSfx = impactSfx

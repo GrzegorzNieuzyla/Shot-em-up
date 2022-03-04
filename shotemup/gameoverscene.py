@@ -1,16 +1,14 @@
 import pygame
 
-from button import Button
-from events import EventHandler
-from gui import GuiText
-from levels import Level1
-from resources import Resources
-from scene import Scene
-from sprite import Sprite
+from .button import Button
+from .events import EventHandler
+from .gui import GuiText
+from .scene import Scene
+from .sprite import Sprite
 
 
 class GameOverScene(Scene):
-    def __init__(self, name, display,background, path, score=0):
+    def __init__(self, name, display, background, path, score=0):
         super(GameOverScene, self).__init__(name, display)
         self.scoreText = None
         self.path = path

@@ -1,11 +1,12 @@
-import pygame
 from pathlib import Path
 
-from button import Button
-from events import EventHandler
-from gui import GuiText
-from scene import Scene
-from sprite import Sprite
+import pygame
+
+from .button import Button
+from .events import EventHandler
+from .gui import GuiText
+from .scene import Scene
+from .sprite import Sprite
 
 
 class HiScoresScene(Scene):
